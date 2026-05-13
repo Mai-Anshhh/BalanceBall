@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d1ptahsni0ykx"]
+
+[ext_resource type="Texture2D" uid="uid://c2tdfsnu2r0gg" path="res://icon.svg" id="1_s0ih4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s0ih4"]
+radius = 5.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_s0ih4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wfaay"]
+size = Vector2(262, 10)
+
+[node name="Node2D" type="Node2D" unique_id=1896510888]
+
+[node name="pivot" type="StaticBody2D" parent="." unique_id=301586012]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pivot" unique_id=2108298547]
+shape = SubResource("CircleShape2D_s0ih4")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1971045000]
+physics_material_override = SubResource("PhysicsMaterial_s0ih4")
+can_sleep = false
+angular_damp = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2026561131]
+scale = Vector2(2.046875, 0.078125)
+texture = ExtResource("1_s0ih4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1984972273]
+shape = SubResource("RectangleShape2D_wfaay")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=2008616584]
+scale = Vector2(0.435, 0.435)
+node_a = NodePath("../pivot")
+node_b = NodePath("../RigidBody2D")
