@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d1ptahsni0ykx" path="res://scene/platform.tscn" id="1_dbls1"]
 [ext_resource type="PackedScene" uid="uid://bjjmm5fgdlxb6" path="res://scene/player.tscn" id="2_33cqm"]
 [ext_resource type="PackedScene" uid="uid://hvlyof7khnux" path="res://scene/killzone.tscn" id="4_xwcet"]
+[ext_resource type="PackedScene" uid="uid://cicuve2gywa7j" path="res://scene/pause_menu.tscn" id="5_p1ry8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p1ry8"]
 
@@ -49,5 +50,8 @@ autostart = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1628664672]
 position = Vector2(0, 330)
 shape = SubResource("WorldBoundaryShape2D_p1ry8")
+
+[node name="PauseMenu" parent="." unique_id=49578373 instance=ExtResource("5_p1ry8")]
+visible = false
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
