@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://k6322662o38d"]
+
+[ext_resource type="Script" uid="uid://bv7sfa1b21qus" path="res://deathscreen.gd" id="1_n6b2r"]
+
+[node name="deathscreen" type="Node2D" unique_id=1030487312]
+script = ExtResource("1_n6b2r")
+
+[node name="button_manager" type="Control" parent="." unique_id=253114113]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="restart" type="Button" parent="button_manager" unique_id=329038024]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 252.0
+offset_right = 1097.0
+offset_bottom = 382.0
+text = "Restart"
+
+[node name="MainMenu" type="Button" parent="button_manager" unique_id=1176321845]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 436.0
+offset_right = 1094.0
+offset_bottom = 566.0
+text = "Main Menu"
+
+[connection signal="pressed" from="button_manager/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="button_manager/MainMenu" to="." method="_on_main_menu_pressed"]

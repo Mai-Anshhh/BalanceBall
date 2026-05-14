@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://fl27rtrqtr5n"]
 
+[ext_resource type="Script" uid="uid://dbi40lmy5angx" path="res://scripts/game.gd" id="1_33cqm"]
 [ext_resource type="PackedScene" uid="uid://d1ptahsni0ykx" path="res://scene/platform.tscn" id="1_dbls1"]
 [ext_resource type="PackedScene" uid="uid://bjjmm5fgdlxb6" path="res://scene/player.tscn" id="2_33cqm"]
+[ext_resource type="PackedScene" uid="uid://hvlyof7khnux" path="res://scene/killzone.tscn" id="4_xwcet"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p1ry8"]
 
 [node name="game" type="Node2D" unique_id=851665569]
+script = ExtResource("1_33cqm")
 
 [node name="platform" parent="." unique_id=209823417 instance=ExtResource("1_dbls1")]
 position = Vector2(7, 0)
@@ -12,3 +17,37 @@ position = Vector2(7, 0)
 position = Vector2(0, -15)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=801066964]
+
+[node name="Control" type="Control" parent="." unique_id=1338277102]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -556.0
+offset_top = -305.0
+offset_right = -516.0
+offset_bottom = -265.0
+
+[node name="scoredisplay" type="Label" parent="Control" unique_id=1762613255]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score: 0"
+
+[node name="Label2" type="Label" parent="Control" unique_id=1562640100]
+visible = false
+layout_mode = 0
+offset_left = 1060.0
+offset_top = -1.0
+offset_right = 1100.0
+offset_bottom = 22.0
+text = "+5"
+
+[node name="Timer" type="Timer" parent="." unique_id=410600232]
+autostart = true
+
+[node name="killzone" parent="." unique_id=1005718692 instance=ExtResource("4_xwcet")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1628664672]
+position = Vector2(0, 330)
+shape = SubResource("WorldBoundaryShape2D_p1ry8")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
