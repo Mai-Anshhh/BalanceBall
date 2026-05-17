@@ -11,9 +11,22 @@ config_version=5
 [application]
 
 config/name="balanceball"
-run/main_scene="uid://fl27rtrqtr5n"
+run/main_scene="uid://px3j23kyn8gj"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://cug4gso05b2it"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=2
+window/size/initial_position=Vector2i(348, 0)
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
@@ -44,5 +57,6 @@ ui_right={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"

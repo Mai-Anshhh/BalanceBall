@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://tq214eqwt3t1"
+path="res://.godot/imported/Bird's Song.wav-d147c1fa41976f0f9064befcca6b49c6.sample"
+
+[deps]
+
+source_file="res://assets/Bird's Song.wav"
+dest_files=["res://.godot/imported/Bird's Song.wav-d147c1fa41976f0f9064befcca6b49c6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

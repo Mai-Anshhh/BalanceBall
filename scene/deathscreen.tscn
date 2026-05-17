@@ -1,9 +1,46 @@
 [gd_scene format=3 uid="uid://k6322662o38d"]
 
-[ext_resource type="Script" uid="uid://bv7sfa1b21qus" path="res://deathscreen.gd" id="1_n6b2r"]
+[ext_resource type="Script" uid="uid://bv7sfa1b21qus" path="res://scripts/deathscreen.gd" id="1_n6b2r"]
+[ext_resource type="Texture2D" uid="uid://diq7p7j4snxcy" path="res://assets/1.png" id="2_ypmdv"]
+
+[sub_resource type="FontFile" id="FontFile_n6b2r"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/54/0/ascent = 0.0
+cache/0/54/0/descent = 0.0
+cache/0/54/0/underline_position = 0.0
+cache/0/54/0/underline_thickness = 0.0
+cache/0/54/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/120/0/ascent = 0.0
+cache/0/120/0/descent = 0.0
+cache/0/120/0/underline_position = 0.0
+cache/0/120/0/underline_thickness = 0.0
+cache/0/120/0/scale = 1.0
 
 [node name="deathscreen" type="Node2D" unique_id=1030487312]
 script = ExtResource("1_n6b2r")
+
+[node name="1" type="Sprite2D" parent="." unique_id=65437811]
+position = Vector2(958.6666, 540)
+scale = Vector2(3.3765435, 3.3765433)
+texture = ExtResource("2_ypmdv")
 
 [node name="button_manager" type="Control" parent="." unique_id=253114113]
 layout_mode = 3
@@ -13,19 +50,30 @@ offset_bottom = 40.0
 
 [node name="restart" type="Button" parent="button_manager" unique_id=329038024]
 layout_mode = 0
-offset_left = 747.0
-offset_top = 252.0
-offset_right = 1097.0
-offset_bottom = 382.0
+offset_left = 763.0
+offset_top = 376.0
+offset_right = 1204.5386
+offset_bottom = 540.0
+theme_override_font_sizes/font_size = 60
 text = "Restart"
 
 [node name="MainMenu" type="Button" parent="button_manager" unique_id=1176321845]
 layout_mode = 0
-offset_left = 744.0
-offset_top = 436.0
-offset_right = 1094.0
-offset_bottom = 566.0
+offset_left = 763.0
+offset_top = 636.0
+offset_right = 1204.5383
+offset_bottom = 800.0
+theme_override_font_sizes/font_size = 60
 text = "Main Menu"
+
+[node name="Label" type="Label" parent="." unique_id=32672009]
+offset_left = 690.0
+offset_top = 73.0
+offset_right = 1253.0
+offset_bottom = 234.0
+theme_override_fonts/font = SubResource("FontFile_n6b2r")
+theme_override_font_sizes/font_size = 120
+text = "YOU DIED!"
 
 [connection signal="pressed" from="button_manager/restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="button_manager/MainMenu" to="." method="_on_main_menu_pressed"]
