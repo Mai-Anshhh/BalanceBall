@@ -50,27 +50,27 @@ offset_bottom = 40.0
 
 [node name="restart" type="Button" parent="button_manager" unique_id=329038024]
 layout_mode = 0
-offset_left = 763.0
-offset_top = 376.0
-offset_right = 1204.5386
-offset_bottom = 540.0
+offset_left = 775.0
+offset_top = 466.0
+offset_right = 1179.0
+offset_bottom = 583.0
 theme_override_font_sizes/font_size = 60
 text = "Restart"
 
 [node name="MainMenu" type="Button" parent="button_manager" unique_id=1176321845]
 layout_mode = 0
-offset_left = 763.0
-offset_top = 636.0
-offset_right = 1204.5383
-offset_bottom = 800.0
+offset_left = 783.0
+offset_top = 645.0
+offset_right = 1166.0
+offset_bottom = 762.0
 theme_override_font_sizes/font_size = 60
 text = "Main Menu"
 
 [node name="Label" type="Label" parent="." unique_id=32672009]
-offset_left = 690.0
-offset_top = 73.0
-offset_right = 1253.0
-offset_bottom = 234.0
+offset_left = 693.0
+offset_top = 231.0
+offset_right = 1256.0
+offset_bottom = 392.0
 theme_override_fonts/font = SubResource("FontFile_n6b2r")
 theme_override_font_sizes/font_size = 120
 text = "YOU DIED!"
