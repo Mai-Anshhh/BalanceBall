@@ -19,10 +19,10 @@ offset_bottom = 40.0
 
 [node name="start" type="Button" parent="button_manager" unique_id=1185628480]
 layout_mode = 0
-offset_left = 749.0
-offset_top = 449.0
-offset_right = 1152.0172
-offset_bottom = 614.0
+offset_left = 730.0
+offset_top = 513.0
+offset_right = 1133.0172
+offset_bottom = 678.0
 theme_override_font_sizes/font_size = 80
 text = "Start"
 
@@ -45,10 +45,10 @@ theme_override_font_sizes/font_size = 50
 text = "Best:"
 
 [node name="Label" type="Label" parent="." unique_id=338829018]
-offset_left = 611.0
-offset_top = 92.0
-offset_right = 1315.0
-offset_bottom = 257.0
+offset_left = 584.0
+offset_top = 225.0
+offset_right = 1288.0
+offset_bottom = 390.0
 theme_override_font_sizes/font_size = 120
 text = "Balance Ball"
 
