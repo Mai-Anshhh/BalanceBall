@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://de7rynjtf1dmx"]
+
+[ext_resource type="AudioStream" uid="uid://tq214eqwt3t1" path="res://assets/Bird's Song.wav" id="1_b3ra5"]
+
+[node name="bg" type="Node2D" unique_id=78773825]
+
+[node name="Bird\'sSong" type="AudioStreamPlayer" parent="." unique_id=19038358]
+stream = ExtResource("1_b3ra5")
+autoplay = true

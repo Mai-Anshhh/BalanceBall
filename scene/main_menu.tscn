@@ -19,14 +19,15 @@ offset_bottom = 40.0
 
 [node name="start" type="Button" parent="button_manager" unique_id=1185628480]
 layout_mode = 0
-offset_left = 756.0
-offset_top = 293.0
-offset_right = 1159.0172
-offset_bottom = 458.0
+offset_left = 749.0
+offset_top = 449.0
+offset_right = 1152.0172
+offset_bottom = 614.0
 theme_override_font_sizes/font_size = 80
 text = "Start"
 
 [node name="quit" type="Button" parent="button_manager" unique_id=256253280]
+visible = false
 layout_mode = 0
 offset_left = 757.0
 offset_top = 515.0

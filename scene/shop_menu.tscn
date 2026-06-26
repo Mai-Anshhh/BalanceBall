@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dmwycqa1fqrk1"]
+
+[ext_resource type="Texture2D" uid="uid://c2tdfsnu2r0gg" path="res://icon.svg" id="1_t4dkq"]
+
+[node name="shop_menu" type="Node2D" unique_id=1439467453]
+
+[node name="Button" type="Button" parent="." unique_id=1773811046]
+offset_left = 487.0
+offset_top = 765.0
+offset_right = 667.0
+offset_bottom = 835.0
+text = "Buy"
+
+[node name="Button2" type="Button" parent="." unique_id=127191203]
+offset_left = 746.0
+offset_top = 765.0
+offset_right = 926.0
+offset_bottom = 835.0
+text = "Buy"
+
+[node name="Button3" type="Button" parent="." unique_id=939093844]
+offset_left = 999.0
+offset_top = 765.0
+offset_right = 1179.0
+offset_bottom = 835.0
+text = "Buy"
+
+[node name="Button4" type="Button" parent="." unique_id=1023656332]
+offset_left = 1245.0
+offset_top = 765.0
+offset_right = 1425.0
+offset_bottom = 835.0
+text = "Buy"
+
+[node name="Label" type="Label" parent="." unique_id=448302695]
+offset_left = 973.0
+offset_top = 57.0
+offset_right = 1013.0
+offset_bottom = 80.0
+text = "Shop"
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1167430363]
+position = Vector2(571, 659)
+texture = ExtResource("1_t4dkq")
